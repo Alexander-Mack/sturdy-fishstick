@@ -1,0 +1,45 @@
+C:\Users\agary\Documents\Comp Sci\CSCI 4301 - System Security\Assignment 08\botnet\bin\Debug\net7.0\botnet.exe
+C:\Users\agary\Documents\Comp Sci\CSCI 4301 - System Security\Assignment 08\botnet\bin\Debug\net7.0\botnet.deps.json
+C:\Users\agary\Documents\Comp Sci\CSCI 4301 - System Security\Assignment 08\botnet\bin\Debug\net7.0\botnet.runtimeconfig.json
+C:\Users\agary\Documents\Comp Sci\CSCI 4301 - System Security\Assignment 08\botnet\bin\Debug\net7.0\botnet.dll
+C:\Users\agary\Documents\Comp Sci\CSCI 4301 - System Security\Assignment 08\botnet\bin\Debug\net7.0\botnet.pdb
+C:\Users\agary\Documents\Comp Sci\CSCI 4301 - System Security\Assignment 08\botnet\obj\Debug\net7.0\botnet.csproj.AssemblyReference.cache
+C:\Users\agary\Documents\Comp Sci\CSCI 4301 - System Security\Assignment 08\botnet\obj\Debug\net7.0\botnet.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\agary\Documents\Comp Sci\CSCI 4301 - System Security\Assignment 08\botnet\obj\Debug\net7.0\botnet.AssemblyInfoInputs.cache
+C:\Users\agary\Documents\Comp Sci\CSCI 4301 - System Security\Assignment 08\botnet\obj\Debug\net7.0\botnet.AssemblyInfo.cs
+C:\Users\agary\Documents\Comp Sci\CSCI 4301 - System Security\Assignment 08\botnet\obj\Debug\net7.0\botnet.csproj.CoreCompileInputs.cache
+C:\Users\agary\Documents\Comp Sci\CSCI 4301 - System Security\Assignment 08\botnet\obj\Debug\net7.0\botnet.dll
+C:\Users\agary\Documents\Comp Sci\CSCI 4301 - System Security\Assignment 08\botnet\obj\Debug\net7.0\refint\botnet.dll
+C:\Users\agary\Documents\Comp Sci\CSCI 4301 - System Security\Assignment 08\botnet\obj\Debug\net7.0\botnet.pdb
+C:\Users\agary\Documents\Comp Sci\CSCI 4301 - System Security\Assignment 08\botnet\obj\Debug\net7.0\botnet.genruntimeconfig.cache
+C:\Users\agary\Documents\Comp Sci\CSCI 4301 - System Security\Assignment 08\botnet\obj\Debug\net7.0\ref\botnet.dll
+C:\Users\agary\OneDrive\Documents\Comp Sci\CSCI 4301 - Systems Security\A08\A08 bots\botnet\bin\Debug\net7.0\botnet.exe
+C:\Users\agary\OneDrive\Documents\Comp Sci\CSCI 4301 - Systems Security\A08\A08 bots\botnet\bin\Debug\net7.0\botnet.deps.json
+C:\Users\agary\OneDrive\Documents\Comp Sci\CSCI 4301 - Systems Security\A08\A08 bots\botnet\bin\Debug\net7.0\botnet.runtimeconfig.json
+C:\Users\agary\OneDrive\Documents\Comp Sci\CSCI 4301 - Systems Security\A08\A08 bots\botnet\bin\Debug\net7.0\botnet.dll
+C:\Users\agary\OneDrive\Documents\Comp Sci\CSCI 4301 - Systems Security\A08\A08 bots\botnet\bin\Debug\net7.0\botnet.pdb
+C:\Users\agary\OneDrive\Documents\Comp Sci\CSCI 4301 - Systems Security\A08\A08 bots\botnet\obj\Debug\net7.0\botnet.csproj.AssemblyReference.cache
+C:\Users\agary\OneDrive\Documents\Comp Sci\CSCI 4301 - Systems Security\A08\A08 bots\botnet\obj\Debug\net7.0\botnet.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\agary\OneDrive\Documents\Comp Sci\CSCI 4301 - Systems Security\A08\A08 bots\botnet\obj\Debug\net7.0\botnet.AssemblyInfoInputs.cache
+C:\Users\agary\OneDrive\Documents\Comp Sci\CSCI 4301 - Systems Security\A08\A08 bots\botnet\obj\Debug\net7.0\botnet.AssemblyInfo.cs
+C:\Users\agary\OneDrive\Documents\Comp Sci\CSCI 4301 - Systems Security\A08\A08 bots\botnet\obj\Debug\net7.0\botnet.csproj.CoreCompileInputs.cache
+C:\Users\agary\OneDrive\Documents\Comp Sci\CSCI 4301 - Systems Security\A08\A08 bots\botnet\obj\Debug\net7.0\botnet.dll
+C:\Users\agary\OneDrive\Documents\Comp Sci\CSCI 4301 - Systems Security\A08\A08 bots\botnet\obj\Debug\net7.0\refint\botnet.dll
+C:\Users\agary\OneDrive\Documents\Comp Sci\CSCI 4301 - Systems Security\A08\A08 bots\botnet\obj\Debug\net7.0\botnet.pdb
+C:\Users\agary\OneDrive\Documents\Comp Sci\CSCI 4301 - Systems Security\A08\A08 bots\botnet\obj\Debug\net7.0\botnet.genruntimeconfig.cache
+C:\Users\agary\OneDrive\Documents\Comp Sci\CSCI 4301 - Systems Security\A08\A08 bots\botnet\obj\Debug\net7.0\ref\botnet.dll
+C:\Users\agary\Documents\Comp Sci\CSCI 4301 - System Security\Assignment 08\A08 bots complete\A08 bots\botnet\bin\Debug\net7.0\botnet.exe
+C:\Users\agary\Documents\Comp Sci\CSCI 4301 - System Security\Assignment 08\A08 bots complete\A08 bots\botnet\bin\Debug\net7.0\botnet.deps.json
+C:\Users\agary\Documents\Comp Sci\CSCI 4301 - System Security\Assignment 08\A08 bots complete\A08 bots\botnet\bin\Debug\net7.0\botnet.runtimeconfig.json
+C:\Users\agary\Documents\Comp Sci\CSCI 4301 - System Security\Assignment 08\A08 bots complete\A08 bots\botnet\bin\Debug\net7.0\botnet.dll
+C:\Users\agary\Documents\Comp Sci\CSCI 4301 - System Security\Assignment 08\A08 bots complete\A08 bots\botnet\bin\Debug\net7.0\botnet.pdb
+C:\Users\agary\Documents\Comp Sci\CSCI 4301 - System Security\Assignment 08\A08 bots complete\A08 bots\botnet\obj\Debug\net7.0\botnet.csproj.AssemblyReference.cache
+C:\Users\agary\Documents\Comp Sci\CSCI 4301 - System Security\Assignment 08\A08 bots complete\A08 bots\botnet\obj\Debug\net7.0\botnet.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\agary\Documents\Comp Sci\CSCI 4301 - System Security\Assignment 08\A08 bots complete\A08 bots\botnet\obj\Debug\net7.0\botnet.AssemblyInfoInputs.cache
+C:\Users\agary\Documents\Comp Sci\CSCI 4301 - System Security\Assignment 08\A08 bots complete\A08 bots\botnet\obj\Debug\net7.0\botnet.AssemblyInfo.cs
+C:\Users\agary\Documents\Comp Sci\CSCI 4301 - System Security\Assignment 08\A08 bots complete\A08 bots\botnet\obj\Debug\net7.0\botnet.csproj.CoreCompileInputs.cache
+C:\Users\agary\Documents\Comp Sci\CSCI 4301 - System Security\Assignment 08\A08 bots complete\A08 bots\botnet\obj\Debug\net7.0\botnet.dll
+C:\Users\agary\Documents\Comp Sci\CSCI 4301 - System Security\Assignment 08\A08 bots complete\A08 bots\botnet\obj\Debug\net7.0\refint\botnet.dll
+C:\Users\agary\Documents\Comp Sci\CSCI 4301 - System Security\Assignment 08\A08 bots complete\A08 bots\botnet\obj\Debug\net7.0\botnet.pdb
+C:\Users\agary\Documents\Comp Sci\CSCI 4301 - System Security\Assignment 08\A08 bots complete\A08 bots\botnet\obj\Debug\net7.0\botnet.genruntimeconfig.cache
+C:\Users\agary\Documents\Comp Sci\CSCI 4301 - System Security\Assignment 08\A08 bots complete\A08 bots\botnet\obj\Debug\net7.0\ref\botnet.dll

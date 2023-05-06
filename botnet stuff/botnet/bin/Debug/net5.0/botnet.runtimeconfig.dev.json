@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\agary\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\agary\\.nuget\\packages"
+    ]
+  }
+}

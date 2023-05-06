@@ -1,0 +1,45 @@
+C:\Users\agary\Documents\Comp Sci\CSCI 4301 - System Security\Assignment 08\bot\bin\Debug\net7.0\bot.exe
+C:\Users\agary\Documents\Comp Sci\CSCI 4301 - System Security\Assignment 08\bot\bin\Debug\net7.0\bot.deps.json
+C:\Users\agary\Documents\Comp Sci\CSCI 4301 - System Security\Assignment 08\bot\bin\Debug\net7.0\bot.runtimeconfig.json
+C:\Users\agary\Documents\Comp Sci\CSCI 4301 - System Security\Assignment 08\bot\bin\Debug\net7.0\bot.dll
+C:\Users\agary\Documents\Comp Sci\CSCI 4301 - System Security\Assignment 08\bot\bin\Debug\net7.0\bot.pdb
+C:\Users\agary\Documents\Comp Sci\CSCI 4301 - System Security\Assignment 08\bot\obj\Debug\net7.0\bot.csproj.AssemblyReference.cache
+C:\Users\agary\Documents\Comp Sci\CSCI 4301 - System Security\Assignment 08\bot\obj\Debug\net7.0\bot.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\agary\Documents\Comp Sci\CSCI 4301 - System Security\Assignment 08\bot\obj\Debug\net7.0\bot.AssemblyInfoInputs.cache
+C:\Users\agary\Documents\Comp Sci\CSCI 4301 - System Security\Assignment 08\bot\obj\Debug\net7.0\bot.AssemblyInfo.cs
+C:\Users\agary\Documents\Comp Sci\CSCI 4301 - System Security\Assignment 08\bot\obj\Debug\net7.0\bot.csproj.CoreCompileInputs.cache
+C:\Users\agary\Documents\Comp Sci\CSCI 4301 - System Security\Assignment 08\bot\obj\Debug\net7.0\bot.dll
+C:\Users\agary\Documents\Comp Sci\CSCI 4301 - System Security\Assignment 08\bot\obj\Debug\net7.0\refint\bot.dll
+C:\Users\agary\Documents\Comp Sci\CSCI 4301 - System Security\Assignment 08\bot\obj\Debug\net7.0\bot.pdb
+C:\Users\agary\Documents\Comp Sci\CSCI 4301 - System Security\Assignment 08\bot\obj\Debug\net7.0\bot.genruntimeconfig.cache
+C:\Users\agary\Documents\Comp Sci\CSCI 4301 - System Security\Assignment 08\bot\obj\Debug\net7.0\ref\bot.dll
+C:\Users\agary\OneDrive\Documents\Comp Sci\CSCI 4301 - Systems Security\A08\A08 bots\bot\bin\Debug\net7.0\bot.exe
+C:\Users\agary\OneDrive\Documents\Comp Sci\CSCI 4301 - Systems Security\A08\A08 bots\bot\bin\Debug\net7.0\bot.deps.json
+C:\Users\agary\OneDrive\Documents\Comp Sci\CSCI 4301 - Systems Security\A08\A08 bots\bot\bin\Debug\net7.0\bot.runtimeconfig.json
+C:\Users\agary\OneDrive\Documents\Comp Sci\CSCI 4301 - Systems Security\A08\A08 bots\bot\bin\Debug\net7.0\bot.dll
+C:\Users\agary\OneDrive\Documents\Comp Sci\CSCI 4301 - Systems Security\A08\A08 bots\bot\bin\Debug\net7.0\bot.pdb
+C:\Users\agary\OneDrive\Documents\Comp Sci\CSCI 4301 - Systems Security\A08\A08 bots\bot\obj\Debug\net7.0\bot.csproj.AssemblyReference.cache
+C:\Users\agary\OneDrive\Documents\Comp Sci\CSCI 4301 - Systems Security\A08\A08 bots\bot\obj\Debug\net7.0\bot.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\agary\OneDrive\Documents\Comp Sci\CSCI 4301 - Systems Security\A08\A08 bots\bot\obj\Debug\net7.0\bot.AssemblyInfoInputs.cache
+C:\Users\agary\OneDrive\Documents\Comp Sci\CSCI 4301 - Systems Security\A08\A08 bots\bot\obj\Debug\net7.0\bot.AssemblyInfo.cs
+C:\Users\agary\OneDrive\Documents\Comp Sci\CSCI 4301 - Systems Security\A08\A08 bots\bot\obj\Debug\net7.0\bot.csproj.CoreCompileInputs.cache
+C:\Users\agary\OneDrive\Documents\Comp Sci\CSCI 4301 - Systems Security\A08\A08 bots\bot\obj\Debug\net7.0\bot.dll
+C:\Users\agary\OneDrive\Documents\Comp Sci\CSCI 4301 - Systems Security\A08\A08 bots\bot\obj\Debug\net7.0\refint\bot.dll
+C:\Users\agary\OneDrive\Documents\Comp Sci\CSCI 4301 - Systems Security\A08\A08 bots\bot\obj\Debug\net7.0\bot.pdb
+C:\Users\agary\OneDrive\Documents\Comp Sci\CSCI 4301 - Systems Security\A08\A08 bots\bot\obj\Debug\net7.0\bot.genruntimeconfig.cache
+C:\Users\agary\OneDrive\Documents\Comp Sci\CSCI 4301 - Systems Security\A08\A08 bots\bot\obj\Debug\net7.0\ref\bot.dll
+C:\Users\agary\Documents\Comp Sci\CSCI 4301 - System Security\Assignment 08\A08 bots complete\A08 bots\bot\bin\Debug\net7.0\bot.exe
+C:\Users\agary\Documents\Comp Sci\CSCI 4301 - System Security\Assignment 08\A08 bots complete\A08 bots\bot\bin\Debug\net7.0\bot.deps.json
+C:\Users\agary\Documents\Comp Sci\CSCI 4301 - System Security\Assignment 08\A08 bots complete\A08 bots\bot\bin\Debug\net7.0\bot.runtimeconfig.json
+C:\Users\agary\Documents\Comp Sci\CSCI 4301 - System Security\Assignment 08\A08 bots complete\A08 bots\bot\bin\Debug\net7.0\bot.dll
+C:\Users\agary\Documents\Comp Sci\CSCI 4301 - System Security\Assignment 08\A08 bots complete\A08 bots\bot\bin\Debug\net7.0\bot.pdb
+C:\Users\agary\Documents\Comp Sci\CSCI 4301 - System Security\Assignment 08\A08 bots complete\A08 bots\bot\obj\Debug\net7.0\bot.csproj.AssemblyReference.cache
+C:\Users\agary\Documents\Comp Sci\CSCI 4301 - System Security\Assignment 08\A08 bots complete\A08 bots\bot\obj\Debug\net7.0\bot.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\agary\Documents\Comp Sci\CSCI 4301 - System Security\Assignment 08\A08 bots complete\A08 bots\bot\obj\Debug\net7.0\bot.AssemblyInfoInputs.cache
+C:\Users\agary\Documents\Comp Sci\CSCI 4301 - System Security\Assignment 08\A08 bots complete\A08 bots\bot\obj\Debug\net7.0\bot.AssemblyInfo.cs
+C:\Users\agary\Documents\Comp Sci\CSCI 4301 - System Security\Assignment 08\A08 bots complete\A08 bots\bot\obj\Debug\net7.0\bot.csproj.CoreCompileInputs.cache
+C:\Users\agary\Documents\Comp Sci\CSCI 4301 - System Security\Assignment 08\A08 bots complete\A08 bots\bot\obj\Debug\net7.0\bot.dll
+C:\Users\agary\Documents\Comp Sci\CSCI 4301 - System Security\Assignment 08\A08 bots complete\A08 bots\bot\obj\Debug\net7.0\refint\bot.dll
+C:\Users\agary\Documents\Comp Sci\CSCI 4301 - System Security\Assignment 08\A08 bots complete\A08 bots\bot\obj\Debug\net7.0\bot.pdb
+C:\Users\agary\Documents\Comp Sci\CSCI 4301 - System Security\Assignment 08\A08 bots complete\A08 bots\bot\obj\Debug\net7.0\bot.genruntimeconfig.cache
+C:\Users\agary\Documents\Comp Sci\CSCI 4301 - System Security\Assignment 08\A08 bots complete\A08 bots\bot\obj\Debug\net7.0\ref\bot.dll
