@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v7.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v7.0": {
+      "gIRC_squIRC/1.0.0": {
+        "runtime": {
+          "gIRC_squIRC.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "gIRC_squIRC/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

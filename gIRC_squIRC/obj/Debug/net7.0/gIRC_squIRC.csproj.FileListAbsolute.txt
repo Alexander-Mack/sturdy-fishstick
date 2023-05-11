@@ -1,0 +1,15 @@
+C:\Users\agary\Documents\Comp Sci\Memes\gIRC_squIRC\bin\Debug\net7.0\gIRC_squIRC.exe
+C:\Users\agary\Documents\Comp Sci\Memes\gIRC_squIRC\bin\Debug\net7.0\gIRC_squIRC.deps.json
+C:\Users\agary\Documents\Comp Sci\Memes\gIRC_squIRC\bin\Debug\net7.0\gIRC_squIRC.runtimeconfig.json
+C:\Users\agary\Documents\Comp Sci\Memes\gIRC_squIRC\bin\Debug\net7.0\gIRC_squIRC.dll
+C:\Users\agary\Documents\Comp Sci\Memes\gIRC_squIRC\bin\Debug\net7.0\gIRC_squIRC.pdb
+C:\Users\agary\Documents\Comp Sci\Memes\gIRC_squIRC\obj\Debug\net7.0\gIRC_squIRC.csproj.AssemblyReference.cache
+C:\Users\agary\Documents\Comp Sci\Memes\gIRC_squIRC\obj\Debug\net7.0\gIRC_squIRC.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\agary\Documents\Comp Sci\Memes\gIRC_squIRC\obj\Debug\net7.0\gIRC_squIRC.AssemblyInfoInputs.cache
+C:\Users\agary\Documents\Comp Sci\Memes\gIRC_squIRC\obj\Debug\net7.0\gIRC_squIRC.AssemblyInfo.cs
+C:\Users\agary\Documents\Comp Sci\Memes\gIRC_squIRC\obj\Debug\net7.0\gIRC_squIRC.csproj.CoreCompileInputs.cache
+C:\Users\agary\Documents\Comp Sci\Memes\gIRC_squIRC\obj\Debug\net7.0\gIRC_squIRC.dll
+C:\Users\agary\Documents\Comp Sci\Memes\gIRC_squIRC\obj\Debug\net7.0\refint\gIRC_squIRC.dll
+C:\Users\agary\Documents\Comp Sci\Memes\gIRC_squIRC\obj\Debug\net7.0\gIRC_squIRC.pdb
+C:\Users\agary\Documents\Comp Sci\Memes\gIRC_squIRC\obj\Debug\net7.0\gIRC_squIRC.genruntimeconfig.cache
+C:\Users\agary\Documents\Comp Sci\Memes\gIRC_squIRC\obj\Debug\net7.0\ref\gIRC_squIRC.dll
