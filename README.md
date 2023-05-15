@@ -7,3 +7,9 @@ This program takes a string from the user and converts it into a "sarcastic" ver
 # botnet stuff
 This folder has some (almost) working parts for a botnet made for psuedo DDOS attacks. For educational purposes only. This is going to be repurposed for a more legally sound purpose.
 
+# gIRC_squIRC
+This is the folder that contains the code for the geck squid IRC server. Current version can handle receiving messages from a single TCP connection.
+
+# gsIRC_Client
+This folder contains the code for the geck squid IRC client. Using this client you can connect to the geck squid server. Uses some multithreading to handle reception and sending of messages asynchronously.
+Will still require some mutual exclusion locks to prevent mismatches.
