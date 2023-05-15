@@ -6,15 +6,15 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v7.0": {
-      "gIRC_squIRC/1.0.0": {
+      "gsIRC_Client/1.0.0": {
         "runtime": {
-          "gIRC_squIRC.dll": {}
+          "gsIRC_Client.dll": {}
         }
       }
     }
   },
   "libraries": {
-    "gIRC_squIRC/1.0.0": {
+    "gsIRC_Client/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

@@ -1,0 +1,15 @@
+/home/gigaham/sturdy-fishstick/gsIRC_Client/obj/Debug/net7.0/gsIRC_Client.csproj.AssemblyReference.cache
+/home/gigaham/sturdy-fishstick/gsIRC_Client/obj/Debug/net7.0/gsIRC_Client.GeneratedMSBuildEditorConfig.editorconfig
+/home/gigaham/sturdy-fishstick/gsIRC_Client/obj/Debug/net7.0/gsIRC_Client.AssemblyInfoInputs.cache
+/home/gigaham/sturdy-fishstick/gsIRC_Client/obj/Debug/net7.0/gsIRC_Client.AssemblyInfo.cs
+/home/gigaham/sturdy-fishstick/gsIRC_Client/obj/Debug/net7.0/gsIRC_Client.csproj.CoreCompileInputs.cache
+/home/gigaham/sturdy-fishstick/gsIRC_Client/bin/Debug/net7.0/gsIRC_Client
+/home/gigaham/sturdy-fishstick/gsIRC_Client/bin/Debug/net7.0/gsIRC_Client.deps.json
+/home/gigaham/sturdy-fishstick/gsIRC_Client/bin/Debug/net7.0/gsIRC_Client.runtimeconfig.json
+/home/gigaham/sturdy-fishstick/gsIRC_Client/bin/Debug/net7.0/gsIRC_Client.dll
+/home/gigaham/sturdy-fishstick/gsIRC_Client/bin/Debug/net7.0/gsIRC_Client.pdb
+/home/gigaham/sturdy-fishstick/gsIRC_Client/obj/Debug/net7.0/gsIRC_Client.dll
+/home/gigaham/sturdy-fishstick/gsIRC_Client/obj/Debug/net7.0/refint/gsIRC_Client.dll
+/home/gigaham/sturdy-fishstick/gsIRC_Client/obj/Debug/net7.0/gsIRC_Client.pdb
+/home/gigaham/sturdy-fishstick/gsIRC_Client/obj/Debug/net7.0/gsIRC_Client.genruntimeconfig.cache
+/home/gigaham/sturdy-fishstick/gsIRC_Client/obj/Debug/net7.0/ref/gsIRC_Client.dll
