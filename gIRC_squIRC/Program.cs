@@ -59,48 +59,76 @@ namespace gIRC_squIRC
         private static void ThreadProc(object? obj)
         {
             var client = (TcpClient)obj!;
+            String data = "";
+            String info = "";
+            String client_name = "";
+            String term_signal = "#CKWBo63DfFxgsHGXv6PAZ4l4ms"
+                                + "7pU0DqcQZX950VY9H9b4TFF2Feyogwx7jqGwLdHYhm"
+                                + "r0wACxZ61yYfaQczNs2Ce4yemd35erDgw";
             // get stream of client
             NetworkStream stream = client.GetStream();
             try
             {
-                String data = "";
                 Byte[] bytes = new Byte[256];
                 int i;
+                i = stream.Read(bytes, 0, bytes.Length);
+                client_name = Encoding.ASCII.GetString(bytes, 0, i);
+                bytes = new Byte[256];
+                Console.WriteLine("'{0}' has connected to the server!", client_name);
                 // while client continues to message
                 while (true)
                 {
                     // receive first part of message as user information
                     i = stream.Read(bytes, 0, bytes.Length);
-                    string info = Encoding.ASCII.GetString(bytes, 0, i);
+                    info = Encoding.ASCII.GetString(bytes, 0, i);
+                    if(info.Equals(term_signal))
+                        throw new Exception("[Connection Terminated]");
+                    bytes = new Byte[256];
                     // receive second part of message as message contents
                     i = stream.Read(bytes, 0, bytes.Length);
                     data = Encoding.ASCII.GetString(bytes, 0, i);
+                    if(data.Equals(term_signal))
+                        throw new Exception("[Connection Terminated]");
+                    bytes = new Byte[256];
                     // write to file or output
-                    Console.WriteLine("Received: {0}\nFrom: {1}", data, info);
-                    // TODO: process data 
-                    // Use semaphores to prevent race conditions
-                    // Lock(semaphore);
-                    data = info + ": " + data;
-                    // WriteToLog(path, log);
-                    // Unlock(semaphore);
-                    byte[] msg = Encoding.ASCII.GetBytes(data);
-                    // return updated log? maybe some other trigger here
-                    stream.Write(msg, 0, msg.Length);
-                    Console.WriteLine("Sent: {0}", data);
+                    if (!data.Equals(""))
+                    {
+                        Console.WriteLine("{1} {2}: {0}", data, info, client_name);
+                        // TODO: process data 
+                        // Use semaphores to prevent race conditions
+                        // Lock(semaphore);
+                        data = info + " " + client_name + ": " + data;
+                        // WriteToLog(path, log);
+                        // Unlock(semaphore);
+                        byte[] msg = Encoding.ASCII.GetBytes(data);
+                        // return updated log? maybe some other trigger here
+                        //stream.Write(msg, 0, msg.Length);
+                        //Console.WriteLine("Sent: {0}", data);
+                    }
+                    data = "";
+                    info = "";
                 }
-
             }
             catch (SocketException e)
             {
                 Console.WriteLine("SocketException: {0}", e);
-
+            }
+            catch (IOException e)
+            {
+                Console.WriteLine("IO Exception: {0}", e);
+                client.Close();
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine("'{0}' has disconnected {1}",
+                    client_name, e.Message);
             }
             finally
             {
-                stream.Close();
+                
                 client.Close();
             }
-
+            Console.WriteLine("{0} Cleaned up ...", client_name);
 
         }
 
