@@ -81,12 +81,11 @@ namespace gsIRC_Client
                             string term_string = "#CKWBo63DfFxgsHGXv6PAZ4l4ms"
                                 + "7pU0DqcQZX950VY9H9b4TFF2Feyogwx7jqGwLdHYhm"
                                 + "r0wACxZ61yYfaQczNs2Ce4yemd35erDgw";
-                            byte[] term_signal = Encoding.ASCII.GetBytes(term_string);
-                            stream.Write(term_signal, 0, term_signal.Length);
+                            WriteString(stream, term_string);
                             running = false;
                         };
             string message = "";
-            String info = "";
+            string info = "";
             DateTime current;
             // loop until user signs off
             while (running)
@@ -109,14 +108,11 @@ namespace gsIRC_Client
                         current = DateTime.Now;
                         // format timestamp info
                         info = "[" + current.ToString("HH:mm:ss") + "]";
-                        byte[] sender = Encoding.ASCII.GetBytes(info);
-                        stream.Write(sender, 0, sender.Length); // send timestamp
+                        WriteString(stream, info); // send timestamp
                         // send second part of message as message contents
-                        byte[] msg = Encoding.ASCII.GetBytes(message);
-                        stream.Write(msg, 0, msg.Length);
+                        WriteString(stream, message);
                     }
                     sem.Release();
-
                 }
                 catch (Exception e)
                 {
@@ -130,8 +126,6 @@ namespace gsIRC_Client
             Console.WriteLine("Incoming launched ...");
             var stream = (NetworkStream)obj;
             ReceiveLog(stream);
-            byte[] bytes = new byte[256];
-            int i;
             string data = "";
             // continue until user signs off
             while (running)
@@ -139,10 +133,7 @@ namespace gsIRC_Client
                 try
                 {
                     // receive new message from other users
-
-                    // wait for a message
-                    i = stream.Read(bytes, 0, bytes.Length);
-                    data = Encoding.ASCII.GetString(bytes, 0, i);
+                    data = ReadBytes(stream);
                     sem.WaitOne(); // lock the screen
                     Console.WriteLine("{0}", data);
                     sem.Release(); // unlock the screen
@@ -157,6 +148,46 @@ namespace gsIRC_Client
         private static void ReceiveLog(NetworkStream stream)
         {
             // This will print the whole log file from the server before allowing messages
+            try
+            {
+                string data;
+                byte[] bytes = new byte[256];
+                string log_head = "IaLzozT3Wfk8f05ELoDUPnObApoYdbuJ0UvqUTLPd4M8G9"
+                        + "0qLhGJ92khDiacHhKUaOY42oNJyCXTIByjfEaMTkjZ0ZOYQTHhhy1S";
+                string log_done = "DAC1wim5Ta0jcyf9fXe8Ckj7YDYzTYkf9EmKDBJOLQU9Os"
+                    + "0WGeustNH0PaDn9Tzf0k9rVqsHvzc6XTBHXgRyP1nsJlHaw7NGvq1Z";
+                data = ReadBytes(stream);
+                if (!data.Equals(log_head))
+                {
+                    throw new Exception("Handshake Error");
+                }
+                WriteString(stream, log_head);
+                do
+                {
+                    data = ReadBytes(stream);
+                } while (!data.Equals(log_done));
+                WriteString(stream, log_done);
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+                stream.Close();
+            }
+        }
+        private static void WriteString(NetworkStream stream, string contents)
+        {
+            byte[] bytes = new byte[256];
+            bytes = Encoding.ASCII.GetBytes(contents);
+            stream.Write(bytes);
+        }
+
+        private static string ReadBytes(NetworkStream stream)
+        {
+            string data = "";
+            byte[] bytes = new byte[256];
+            int i = stream.Read(bytes, 0, bytes.Length);
+            data = Encoding.ASCII.GetString(bytes, 0, i);
+            return data;
         }
     }
 }

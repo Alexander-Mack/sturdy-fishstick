@@ -9,20 +9,23 @@ namespace gIRC_squIRC
 {
     class gIRC_squIRC
     {
-        private static string path = "";
+        private static string[]? log_contents;
         static void Main(string[] args)
         {
             // boot server
             Console.WriteLine("Server starting up ...");
             DateTime current = DateTime.Now;
             // set the local log file to the current day.
-            path = current.Day + "-" + current.Month + "-" + current.Year + ".txt";
+            string path = current.Day + "-" + current.Month + "-" + current.Year + ".txt";
             Console.WriteLine("Today is: {0}-{1}-{2}", current.Day, current.Month, current.Year);
             // if the log file does not exist create a new one with a header
             if (!File.Exists(path))
             {
                 File.Create(path);
-                File.WriteAllText(path, "[File Head]");
+            }
+            else
+            {
+                log_contents = File.ReadAllLines(path);
             }
             // launch server
             StartServer(path);
@@ -67,6 +70,7 @@ namespace gIRC_squIRC
                                 + "r0wACxZ61yYfaQczNs2Ce4yemd35erDgw";
             // get stream of client
             NetworkStream stream = client.GetStream();
+            SendLog(stream);
             try
             {
                 Byte[] bytes = new Byte[256];
@@ -81,13 +85,13 @@ namespace gIRC_squIRC
                     // receive first part of message as user information
                     i = stream.Read(bytes, 0, bytes.Length);
                     info = Encoding.ASCII.GetString(bytes, 0, i);
-                    if(info.Equals(term_signal))
+                    if (info.Equals(term_signal))
                         throw new Exception("[Connection Terminated]");
                     bytes = new Byte[256];
                     // receive second part of message as message contents
                     i = stream.Read(bytes, 0, bytes.Length);
                     data = Encoding.ASCII.GetString(bytes, 0, i);
-                    if(data.Equals(term_signal))
+                    if (data.Equals(term_signal))
                         throw new Exception("[Connection Terminated]");
                     bytes = new Byte[256];
                     // write to file or output
@@ -95,15 +99,7 @@ namespace gIRC_squIRC
                     {
                         Console.WriteLine("{1} {2}: {0}", data, info, client_name);
                         // TODO: process data 
-                        // Use semaphores to prevent race conditions
-                        // Lock(semaphore);
-                        data = info + " " + client_name + ": " + data;
-                        // WriteToLog(path, log);
-                        // Unlock(semaphore);
-                        byte[] msg = Encoding.ASCII.GetBytes(data);
-                        // return updated log? maybe some other trigger here
-                        //stream.Write(msg, 0, msg.Length);
-                        //Console.WriteLine("Sent: {0}", data);
+                        
                     }
                     data = "";
                     info = "";
@@ -112,6 +108,7 @@ namespace gIRC_squIRC
             catch (SocketException e)
             {
                 Console.WriteLine("SocketException: {0}", e);
+                client.Close();
             }
             catch (IOException e)
             {
@@ -125,12 +122,60 @@ namespace gIRC_squIRC
             }
             finally
             {
-                
                 client.Close();
             }
             Console.WriteLine("{0} Cleaned up ...", client_name);
 
         }
 
+        private static void SendLog(NetworkStream stream)
+        {
+            try
+            {
+                string data;
+                string log_head = "IaLzozT3Wfk8f05ELoDUPnObApoYdbuJ0UvqUTLPd4M8G9"
+                    + "0qLhGJ92khDiacHhKUaOY42oNJyCXTIByjfEaMTkjZ0ZOYQTHhhy1S";
+                string log_done = "DAC1wim5Ta0jcyf9fXe8Ckj7YDYzTYkf9EmKDBJOLQU9Os"
+                    + "0WGeustNH0PaDn9Tzf0k9rVqsHvzc6XTBHXgRyP1nsJlHaw7NGvq1Z";
+                WriteString(stream, log_head);
+                data = ReadBytes(stream);
+                if (!data.Equals(log_head))
+                {
+                    throw new Exception("Handshake Error");
+                }
+                foreach (string line in log_contents!)
+                {
+                    WriteString(stream, line);
+                    
+                }
+                WriteString(stream, log_done);
+                data = ReadBytes(stream);
+                if (!data.Equals(log_done))
+                {
+                    throw new Exception("Handshake Error");
+                }
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+                stream.Close();
+            }
+        }
+
+        private static void WriteString(NetworkStream stream, string contents)
+        {
+            byte[] bytes = new byte[256];
+            bytes = Encoding.ASCII.GetBytes(contents);
+            stream.Write(bytes);
+        }
+
+        private static string ReadBytes(NetworkStream stream)
+        {
+            string data = "";
+            byte[] bytes = new byte[256];
+            int i = stream.Read(bytes, 0, bytes.Length);
+            data = Encoding.ASCII.GetString(bytes, 0, i);
+            return data;
+        }
     }
 }
