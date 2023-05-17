@@ -71,17 +71,30 @@ namespace gsIRC_Client
                 Console.WriteLine("NullReferenceException: {0}", e);
             }
         }
-
+        
+        /// <summary>
+        /// This method handles the outgoing messages from the user to the 
+        /// server.
+        /// <param name="user">
+        /// The client's name
+        /// </param>
+        /// <param name="stream">
+        /// The NetworkStream of the client
+        /// </param>
+        /// </summary>
         private static void OutgoingHandler(string user, NetworkStream stream)
         {
             Console.WriteLine("Outgoing launched ...");
+            // event handler for catching Ctrl-C events. 
             Console.CancelKeyPress += delegate
                         {
                             Console.WriteLine("Logging out!");
+                            // 102 character string to signal EOT
                             string term_string = "#CKWBo63DfFxgsHGXv6PAZ4l4ms"
                                 + "7pU0DqcQZX950VY9H9b4TFF2Feyogwx7jqGwLdHYhm"
                                 + "r0wACxZ61yYfaQczNs2Ce4yemd35erDgw";
                             WriteString(stream, term_string);
+                            // terminate client
                             running = false;
                         };
             string message = "";
@@ -121,6 +134,12 @@ namespace gsIRC_Client
             }
         }
 
+        /// <summary>
+        /// This method handles the incoming messages from the server.
+        /// <param name="obj">
+        /// The NetworkStream object of the client
+        /// </param>
+        /// </summary>
         private static void IncomingHandler(object obj)
         {
             Console.WriteLine("Incoming launched ...");
@@ -145,6 +164,13 @@ namespace gsIRC_Client
             }
         }
 
+        /// <summary>
+        /// This method receives the log from the server and outputs it to the
+        /// client's screen.
+        /// <param name="stream">
+        /// The NetworkStream of the client
+        /// </param>
+        /// </summary>
         private static void ReceiveLog(NetworkStream stream)
         {
             // This will print the whole log file from the server before allowing messages
@@ -152,9 +178,9 @@ namespace gsIRC_Client
             {
                 string data;
                 byte[] bytes = new byte[256];
-                string log_head = "IaLzozT3Wfk8f05ELoDUPnObApoYdbuJ0UvqUTLPd4M8G9"
+                string log_head = "#CIaLzozT3Wfk8f05ELoDUPnObApoYdbuJ0UvqUTLPd4M8G9"
                         + "0qLhGJ92khDiacHhKUaOY42oNJyCXTIByjfEaMTkjZ0ZOYQTHhhy1S";
-                string log_done = "DAC1wim5Ta0jcyf9fXe8Ckj7YDYzTYkf9EmKDBJOLQU9Os"
+                string log_done = "#CDAC1wim5Ta0jcyf9fXe8Ckj7YDYzTYkf9EmKDBJOLQU9Os"
                     + "0WGeustNH0PaDn9Tzf0k9rVqsHvzc6XTBHXgRyP1nsJlHaw7NGvq1Z";
                 data = ReadBytes(stream);
                 if (!data.Equals(log_head))
@@ -165,6 +191,7 @@ namespace gsIRC_Client
                 do
                 {
                     data = ReadBytes(stream);
+                    Console.Write(data);
                 } while (!data.Equals(log_done));
                 WriteString(stream, log_done);
             }
@@ -174,6 +201,16 @@ namespace gsIRC_Client
                 stream.Close();
             }
         }
+
+        /// <summary>
+        /// This method sends a string to the server as bytes.
+        /// <param name="stream">
+        /// The NetworkStream of the client
+        /// </param>
+        /// <param name="contents">
+        /// The contents of the message to send
+        /// </param>
+        /// </summary>
         private static void WriteString(NetworkStream stream, string contents)
         {
             byte[] bytes = new byte[256];
@@ -181,6 +218,14 @@ namespace gsIRC_Client
             stream.Write(bytes);
         }
 
+        /// <summary>
+        /// This method receives an array of bytes from the server and
+        /// converts it to a string.
+        /// <param name="stream">
+        /// The NetworkStream of the client
+        /// </param>
+        /// <returns>The string received from the server</returns>
+        /// </summary>
         private static string ReadBytes(NetworkStream stream)
         {
             string data = "";
