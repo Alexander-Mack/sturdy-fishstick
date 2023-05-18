@@ -65,7 +65,10 @@ namespace gIRC_squIRC
                     // if a new client is received
                     TcpClient client = server.AcceptTcpClient();
                     // create a new thread to handle it.
+
+                    stream_sem.WaitOne();
                     num_clients++;
+                    stream_sem.Release();
                     ThreadPool.QueueUserWorkItem(ThreadProc, client);
                 }
             }
@@ -88,7 +91,7 @@ namespace gIRC_squIRC
         {
             var client = (TcpClient)obj!;
             String data = "";
-            String info = "";
+            String timestamp = "";
             String client_name = "";
             // 102 digit string to detect EOT
             String term_signal = "#CKWBo63DfFxgsHGXv6PAZ4l4ms"
@@ -99,19 +102,21 @@ namespace gIRC_squIRC
             // create thread for sending new messages to all clients
             Thread log_updater = new Thread(SendUpdatedLog);
             log_updater.Start(stream);
-            // send existing logs to user
-            SendLog(stream);
+
             try
             {
+                // get user name
                 client_name = ReadBytes(stream);
+                // send existing logs to user
+                SendLog(stream, client_name);
                 Console.WriteLine("'{0}' has connected to the server!", client_name);
                 // while client continues to message
                 while (true)
                 {
                     // receive first part of message as user information
-                    info = ReadBytes(stream);
+                    timestamp = ReadBytes(stream);
                     // if EOT is received, end transmission
-                    if (info.Equals(term_signal))
+                    if (timestamp.Equals(term_signal))
                         throw new Exception("[Connection Terminated]");
                     // receive second part of message as message contents
                     data = ReadBytes(stream);
@@ -122,11 +127,11 @@ namespace gIRC_squIRC
                     if (!data.Equals(""))
                     {
                         file_sem.WaitOne();
-                        WriteToFile(info, client_name, data);
+                        WriteToFile(timestamp, client_name, data);
                         file_sem.Release();
                     }
                     data = "";
-                    info = "";
+                    timestamp = "";
                 }
             }
             catch (SocketException e)
@@ -139,6 +144,11 @@ namespace gIRC_squIRC
                 Console.WriteLine("IO Exception: {0}", e);
                 client.Close();
             }
+            catch (ObjectDisposedException e)
+            {
+                Console.WriteLine("'{0}' has disconnected"
+                    +" [Connection Terminated]", client_name);
+            }
             catch (Exception e)
             {
                 Console.WriteLine("'{0}' has disconnected {1}",
@@ -147,6 +157,9 @@ namespace gIRC_squIRC
             finally
             {
                 client.Close();
+                stream_sem.WaitOne();
+                num_clients--;
+                stream_sem.Release();
             }
             Console.WriteLine("{0} Cleaned up ...", client_name);
         }
@@ -156,7 +169,7 @@ namespace gIRC_squIRC
         /// log updater, as well as sending it to the clients. It will wait 
         /// for all the clients to send the new message before clearing the 
         /// message and resetting the counter.
-        /// <param name="info">
+        /// <param name="timestamp">
         /// The timestamp information of the message
         /// </param>
         /// <param name="client">
@@ -166,13 +179,13 @@ namespace gIRC_squIRC
         /// The contents of the message
         /// </param>
         /// </summary>
-        private static void WriteToFile(string info, string client, string data)
+        private static void WriteToFile(string timestamp, string client, string data)
         {
-            new_content = info + " " + client + ": " + data + "\n";
+            new_content = timestamp + " " + client + ": " + data;
             // append to file
-            File.AppendAllText(path, new_content);
+            File.AppendAllText(path, new_content+"\n");
             // reflect onto console
-            Console.Write(new_content);
+            Console.WriteLine(new_content);
             // wait until all clients have received the new message
             while (sent_clients < num_clients) ;
             // reset global variables
@@ -217,10 +230,13 @@ namespace gIRC_squIRC
         /// <summary>
         /// This method sends the current log to the client
         /// <param name="stream">
-        ///The NetworkStream of the current client
+        /// The NetworkStream of the current client
+        /// </param>
+        /// <param name="client">
+        /// The name of the current client
         /// </param>
         /// </summary>
-        private static void SendLog(NetworkStream stream)
+        private static void SendLog(NetworkStream stream, string client)
         {
             try
             {
@@ -235,16 +251,23 @@ namespace gIRC_squIRC
                 WriteString(stream, log_head);
                 // wait for confirmation of SOT
                 data = ReadBytes(stream);
+                // Console.WriteLine(data);
                 // if not SOT, error and close
                 if (!data.Equals(log_head))
                 {
-                    throw new Exception("Handshake Error");
+                    throw new Exception("[Handshake Error]");
                 }
                 // send each line of the log to the client
                 foreach (string line in log_contents!)
                 {
                     WriteString(stream, line);
+                    data = ReadBytes(stream);
+                    if(!data.Equals(log_head))
+                    {
+                        throw new Exception("[Handshake Error]");
+                    }
                 }
+                Console.WriteLine("Sending EOT to {0}...", client);
                 // send end of transmission code (EOT)
                 WriteString(stream, log_done);
                 // wait for confirmation of EOT
@@ -252,13 +275,14 @@ namespace gIRC_squIRC
                 // if not EOT, error and close
                 if (!data.Equals(log_done))
                 {
-                    throw new Exception("Handshake Error");
+                    throw new Exception("[Handshake Error]");
                 }
             }
             // catch handshake errors and close
             catch (Exception e)
             {
-                Console.WriteLine(e.Message);
+                Console.WriteLine("{0} disconnected due to an error: {1}",
+                client, e.Message);
                 stream.Close();
             }
         }

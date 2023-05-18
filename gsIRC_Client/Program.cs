@@ -191,7 +191,10 @@ namespace gsIRC_Client
                 do
                 {
                     data = ReadBytes(stream);
-                    Console.Write(data);
+                    if(!data.Equals(log_done)){
+                        Console.WriteLine(data);
+                        WriteString(stream, log_head);
+                    }
                 } while (!data.Equals(log_done));
                 WriteString(stream, log_done);
             }
