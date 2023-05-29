@@ -1,0 +1,15 @@
+/home/gigaham/sturdy-fishstick/IRC_Server/bin/Debug/net7.0/IRC_Server
+/home/gigaham/sturdy-fishstick/IRC_Server/bin/Debug/net7.0/IRC_Server.deps.json
+/home/gigaham/sturdy-fishstick/IRC_Server/bin/Debug/net7.0/IRC_Server.runtimeconfig.json
+/home/gigaham/sturdy-fishstick/IRC_Server/bin/Debug/net7.0/IRC_Server.dll
+/home/gigaham/sturdy-fishstick/IRC_Server/bin/Debug/net7.0/IRC_Server.pdb
+/home/gigaham/sturdy-fishstick/IRC_Server/obj/Debug/net7.0/IRC_Server.csproj.AssemblyReference.cache
+/home/gigaham/sturdy-fishstick/IRC_Server/obj/Debug/net7.0/IRC_Server.GeneratedMSBuildEditorConfig.editorconfig
+/home/gigaham/sturdy-fishstick/IRC_Server/obj/Debug/net7.0/IRC_Server.AssemblyInfoInputs.cache
+/home/gigaham/sturdy-fishstick/IRC_Server/obj/Debug/net7.0/IRC_Server.AssemblyInfo.cs
+/home/gigaham/sturdy-fishstick/IRC_Server/obj/Debug/net7.0/IRC_Server.csproj.CoreCompileInputs.cache
+/home/gigaham/sturdy-fishstick/IRC_Server/obj/Debug/net7.0/IRC_Server.dll
+/home/gigaham/sturdy-fishstick/IRC_Server/obj/Debug/net7.0/refint/IRC_Server.dll
+/home/gigaham/sturdy-fishstick/IRC_Server/obj/Debug/net7.0/IRC_Server.pdb
+/home/gigaham/sturdy-fishstick/IRC_Server/obj/Debug/net7.0/IRC_Server.genruntimeconfig.cache
+/home/gigaham/sturdy-fishstick/IRC_Server/obj/Debug/net7.0/ref/IRC_Server.dll

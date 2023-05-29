@@ -1,0 +1,15 @@
+C:\Users\agary\source\repos\IRC_Client\IRC_Client\bin\Debug\IRC_Client.exe.config
+C:\Users\agary\source\repos\IRC_Client\IRC_Client\bin\Debug\IRC_Client.exe
+C:\Users\agary\source\repos\IRC_Client\IRC_Client\bin\Debug\IRC_Client.pdb
+C:\Users\agary\source\repos\IRC_Client\IRC_Client\obj\Debug\IRC_Client.csproj.AssemblyReference.cache
+C:\Users\agary\source\repos\IRC_Client\IRC_Client\obj\Debug\IRC_Client.csproj.SuggestedBindingRedirects.cache
+C:\Users\agary\source\repos\IRC_Client\IRC_Client\obj\Debug\IRC_Client.Form1.resources
+C:\Users\agary\source\repos\IRC_Client\IRC_Client\obj\Debug\IRC_Client.Properties.Resources.resources
+C:\Users\agary\source\repos\IRC_Client\IRC_Client\obj\Debug\IRC_Client.csproj.GenerateResource.cache
+C:\Users\agary\source\repos\IRC_Client\IRC_Client\obj\Debug\IRC_Client.csproj.CoreCompileInputs.cache
+C:\Users\agary\source\repos\IRC_Client\IRC_Client\obj\Debug\IRC_Client.exe
+C:\Users\agary\source\repos\IRC_Client\IRC_Client\obj\Debug\IRC_Client.pdb
+C:\Users\agary\source\repos\IRC_Client\IRC_Client\bin\Debug\IRC_Client.exe.manifest
+C:\Users\agary\source\repos\IRC_Client\IRC_Client\bin\Debug\IRC_Client.application
+C:\Users\agary\source\repos\IRC_Client\IRC_Client\obj\Debug\IRC_Client.exe.manifest
+C:\Users\agary\source\repos\IRC_Client\IRC_Client\obj\Debug\IRC_Client.application
