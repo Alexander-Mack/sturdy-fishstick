@@ -24,7 +24,7 @@ This program simulates an odd intersection of buses that only require being the 
 
 ## The following programs include "utilities.h" among other header files or drivers that were provided courtesy of Professor Porter Scobey. They are not included in this library. Their purpose will be explicitely described for each program listed.
 
-# eval_pre_pst.cpp
+# eval_pre_post.cpp
 This program evaluates any valid prefix or postfix expression which contains positive integer operands and the operators +, -, * and/or /. The expression  to be evaluated must be entered on the command line within double quotes. Note that a single positive integer simply evaluates as itself. 
 This program uses utilities.h to provide a Pause() function that would wait for the user to proceed, as well as a DisplayOpeningScreen method that would format the desired text to produce an information screen.
 
@@ -59,6 +59,6 @@ This program uses utilities.h for the Pause and DisplayOpeningScreen functions.
 This program is a class file that implements Concordance.h, which was provided by Professor Porter Scobey. These functions are used in the driver to generate a concordance for any given file, and to print the concordance to the standard output or to a designated file.
 This program is to be compiled with concordance_driver.cpp as the main driver.
 
-# concordance_driver
+# concordance_driver.cpp
 This program is the driver file for the Concordance.h header file, provided by Professor Porter Scobey, to generate a concordance for any given file.
 This program uses utilities.h for the Pause, DisplayOpeningScreen, and TextItems functions.
