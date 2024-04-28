@@ -1,6 +1,8 @@
 # sturdy-fishstick
 This repository will be a collection of assorted projects that I have worked on for my own personal use. If you like any of this please feel free to use it just make sure to credit me if you make it big!
 
+# ACM Finder
+This folder contains all the code for the ACM finder website, created entirely by me. 
 # IRC_Client
 This folder contains the workings of a C# based IRC client, to be used in tandem with the IRC_Server. It has a GUI that accepts messages from the user, and receives messages from the server. It uses RSA and AES encryption to protect transmissions. The program is designed for Windows machines, using windows forms and some VB objects. Currently the IP address is incorrectly set for network safety, so that will need to be changed in order for the program to function.
 
