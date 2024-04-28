@@ -1,0 +1,858 @@
+body,
+html {
+    background: linear-gradient(lightsteelblue 60%, white) no-repeat;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+    flex-shrink: 0;
+    user-select: none;
+}
+
+#header {
+    z-index: 2;
+    margin-top: 10px;
+    padding: 0px;
+    width: 90%;
+    position: fixed;
+    left: 50%;
+    margin-left: -45%;
+    height: 75px;
+    display: block;
+    align-self: center;
+    background-color: grey;
+    border-radius: 15px;
+    border: 3px double;
+    box-shadow: -1px -1px 3px #aaa8a8;
+}
+
+#spacer {
+    margin: 55px;
+}
+
+#infoPopup {
+    display: none;
+    position: absolute;
+    padding: 5px;
+    border: dashed 2px lightsteelblue;
+    background: rgba(240, 248, 255, 0.9);
+    border-radius:5px;
+    text-align: center;
+    width: auto;
+    max-width: 30%;
+}
+
+#banner {
+    width: auto;
+    border: 3px hidden darkslategrey;
+    border-top-left-radius: 13px;
+    border-top-right-radius: 13px;
+    background-image: linear-gradient(#a3a3ff, aliceblue);
+    display: block;
+    height: 50px;
+    padding: 0px;
+    padding-left: 30px;
+    text-align: center;
+    border-bottom: 2px solid black;
+}
+
+#welcome {
+    user-select: none;
+    float: left;
+    margin-left: 2%;
+    padding-top: 12.5px;
+    font-size: 25px;
+    font-weight: bold;
+    background-color: inherit;
+    text-shadow: -0.5px -0.5px 3px rgb(80, 53, 53);
+}
+
+.bannerButtons {
+    display: inline-flex;
+    float: right;
+    width: 231px;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    margin: auto;
+    padding: 3px;
+}
+
+#bannerInfo {
+    font-size: 18px;
+    width: 231px;
+    margin-top: 2px;
+}
+
+.accButtons {
+    text-align: center;
+    background-color: aliceblue;
+    height: 21px;
+    width: 75px;
+    border-radius: 5px;
+}
+
+#loginCart>form {
+    width: 75px;
+}
+
+#accountButton {
+    font-size: 13.333333px;
+    text-align: center;
+}
+
+#navigation {
+    border-bottom-left-radius: 13px;
+    border-bottom-right-radius: 13px;
+    border: 0px hidden darkslategray;
+    display: block;
+    background-color: aliceblue;
+    width: auto;
+    padding: 0px;
+    height: 23px;
+}
+
+.navbutton {
+    box-sizing: border-box;
+    cursor: pointer;
+    text-align: center;
+    display: inline-block;
+    background-color: inherit;
+    border: 2px solid aliceblue;
+    margin-top: 0px;
+    width: calc(20% - 3.215px);
+    margin: auto;
+    padding: 0px;
+    height: 23px;
+    user-select: none;
+}
+
+/*when any of the navigation buttons are hovered*/
+.navbutton:hover,
+.accButtons:hover {
+    background-color: rgb(199, 211, 221);
+    border: 2px outset gray;
+}
+
+/*when any of the navigation buttons are pressed*/
+.navbutton:active,
+.accButtons:active {
+    /*background-color: rgb(199, 211, 221);*/
+    border: 2px inset gray;
+}
+
+#home {
+    border-bottom-left-radius: 12px;
+}
+
+#about {
+    border-bottom-right-radius: 12px;
+}
+
+
+
+#main {
+    display: block;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+}
+
+#middle>div {
+    display: block;
+    width: 90%;
+    background-color: aliceblue;
+    border: 4px groove steelblue;
+    border-radius: 5px;
+    text-align: left;
+}
+
+
+#middle>p {
+    display: block;
+    margin: 10px;
+    padding: 10px;
+    width: 40%;
+    background-color: aliceblue;
+    border: 4px groove steelblue;
+    border-radius: 5px;
+    text-align: left;
+}
+
+#loader {
+    position: absolute;
+    z-index: -99;
+    top: 0;
+    height: 0px;
+    width: 0px;
+    padding: 0px;
+    margin: 0px;
+}
+
+#middle h1,
+#middle h2 {
+    margin: auto auto 30px auto;
+    padding: 5px;
+    width: fit-content;
+    text-align: center;
+    border: 4px groove steelblue;
+    border-radius: 5px;
+    background-color: aliceblue;
+}
+
+
+#middle {
+    display: block;
+}
+
+footer {
+    flex-grow: 1;
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    height: auto;
+    padding: 0px;
+    margin-bottom: 0px;
+}
+
+#info {
+    position: relative;
+    width: auto;
+    bottom: -100px;
+    margin-top: 30px;
+    padding: 15px;
+    height: 100%;
+    background-image: linear-gradient(#a3a3ff, black);
+    display: flex;
+    border: hidden;
+    border-top: 5px ridge slategray;
+    box-shadow: 0px 0px 10px 1px slategray;
+}
+
+#contactContainer {
+    margin: 0px auto 0px auto;
+    float: left;
+    display: block;
+}
+
+#compContainer {
+    margin: 0px auto 0px auto;
+    display: block;
+    float: right;
+}
+
+#slogan {
+    margin: auto auto 0px auto;
+    float: right;
+    right: 0px;
+}
+
+.contacts {
+    color: white;
+}
+
+#searchTable {
+    display: block;
+    width: 85%;
+    margin: auto;
+    padding: 5px;
+}
+
+#searchControls {
+    display: block;
+}
+
+#supplierSelect {
+    float: left;
+    width: 100px;
+    padding: 1px;
+    height: 24px;
+}
+
+#searchTableBtn {
+    display: flex;
+    float: right;
+    height: 26px;
+    padding: 4px;
+}
+
+#searchTableField {
+    display: block;
+    margin-right: 0px;
+    width: 200px;
+    height: 20px;
+    margin-bottom: 1px;
+    margin-left: auto;
+}
+
+#tableContainer {
+    background-color: aliceblue;
+}
+
+.tableFixHead{
+    overflow-y: auto;
+    height: 600px;
+}
+
+
+
+/* Just common table stuff. */
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th,
+td {
+    border: 1px solid black;
+    padding: 0px 16px;
+}
+
+.tableFixHead thead th {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+thead {
+    border: 1px solid black;
+}
+
+th {
+    height: 40px;
+    background: beige
+}
+
+#failedSearch {
+    position: fixed;
+    background-color: salmon;
+    width: calc(85% - 6px);
+    height: auto;
+    padding-left: 7px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: -1px;
+    font-size: 36px;
+}
+
+tr:hover:not(#failedSearch) {
+    background-color: rgb(186, 188, 190);
+}
+
+tr:active:not(#failedSearch) {
+    background-color: rgb(197, 197, 199);
+}
+
+#infoBox {
+    border: 5px solid rgb(196, 211, 216);
+    border-radius: 25px;
+    padding: 25px;
+    padding-top: 15px;
+    padding-bottom: 20px;
+    margin: 0px 5%;
+    background-color: aliceblue;
+}
+
+#accInfoBox{
+    margin-left:-5px;
+}
+
+#accInfoBox button{
+    background-color:aliceblue;
+    border:none;
+    text-decoration: underline;
+    margin-bottom:-2px;
+    padding-bottom:0px;
+    padding-top: 5px;
+    font-size: 12px;
+    height: 22px;
+}
+
+#accInfoBox button:hover{
+    color:blue;
+}
+
+#accInfoBox button:active{
+    color:purple;
+}
+
+#accInfoBox>div{
+    padding: 1px 0px 3px 0px;
+    border-bottom: 2px solid black;
+    font-size: 20px;
+    min-height: 22px;
+}
+
+#accInfoBox span.left{
+    margin-left: 5px;
+}
+#accInfoBox span.right{
+    margin-right: 5px;
+}
+
+#infoBox>div {
+    margin: 5px;
+    padding: 0px 0px 3px 0px;
+    border-bottom: 2px solid black;
+    font-size: 20px;
+    min-height: 22px;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.center {
+    margin-left: 50%;
+}
+
+.listingOptions {
+    display: inline-block;
+    padding: 7px;
+    font-size: 20px;
+    border-width: 3px;
+    border-radius: 7px;
+    margin: auto;
+    margin-top: 10px;
+    width: 190px;
+    min-width: 190px;
+    height: 61px;
+}
+
+#addToCart, #confirmDeleteButton, #confirmChangeButton {
+    background-color: lightgreen;
+}
+
+#goBack, #cancelDeleteButton, #cancelChangeButton {
+    background-color: lightcoral;
+}
+
+#addPartial {
+
+    background: gold;
+    border-width: 3px;
+    border-radius: 7px;
+    height: 61px;
+    width: 25%;
+    min-width: 190px;
+    font-size: 20px;
+    margin: auto;
+}
+
+#addSelectedQTY {
+    text-align: center;
+    height: 20px;
+    margin: 5px auto 5px auto;
+}
+
+
+#postTableContainer {
+    display: flex;
+    margin: auto;
+}
+
+.styleBox {
+    display: block;
+    padding: 20px;
+    border-radius: 15px;
+    margin: auto;
+    background-image: radial-gradient(ellipse at center, steelblue 40%, transparent 70%);
+}
+
+#cartContainer,
+#cartTotalContainer {
+    margin: auto;
+}
+#cartTotalContainer{
+    height:60px;
+}
+
+#panelReqForm, #billingForm{
+    background-color: aliceblue;
+    display: flex;
+    border-radius: 5px;
+    border-style: none;
+    border-image: linear-gradient(175deg, slategray, steelblue) 1% stretch;
+    height: auto;
+    width: auto;
+    margin: auto;
+}
+
+#notesUpl {
+    margin: auto;
+    margin-bottom: 5px;
+    width: 100%;
+    height: 150px;
+    padding: 0px;
+}
+
+.uplFormMultiContainer {
+    display: flex;
+    flex-flow: column;
+    align-items: flex-end;
+}
+
+.uplFormSingleContainer {
+    display: flex;
+    flex-flow: row;
+    justify-content: flex-end;
+}
+
+.uplFormSingleContainer>input {
+    width: 100px;
+}
+#allowIndividual{
+    width:15px;
+}
+#requestForm,
+#registrationForm {
+    margin:auto;
+    background-color: aliceblue;
+    border: 4px groove steelblue;
+    border-radius: 5px;
+    display: block;
+    width: 100%;
+    padding: 5px;
+}
+
+.inReqForm,
+.inRegForm,
+.inUplForm {
+    width: 100%;
+    display: flex;
+    height: auto;
+    font-size: larger;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.inReqForm>input,
+.inRegForm>input {
+    width: 60%;
+    height: 20px;
+}
+
+#panelReqForm label,
+#panelReqForm input,
+.inReqForm>span,
+.inRegForm label,
+.inRegForm input,
+.inRegForm>span {
+    margin: 5px;
+    margin-left: 0px;
+    padding: 2px;
+}
+
+#quantityUpl {
+    width: 12%;
+    min-width: 50px;
+}
+
+#coreRadio {
+    margin-right: 0px;
+    width: 65%;
+
+}
+
+#minDim {
+    text-align: right;
+    width: 60%;
+}
+
+#minDimReqX,
+#minDimReqY,
+#minDimReqZ {
+    width: 35%;
+}
+
+#colourReq,
+#refReq {
+    margin-left: 0px;
+    margin-right: 0px;
+    padding: 0px;
+    width: 25%;
+    max-width: calc(25% - 35px);
+}
+
+.green {
+    background-color: lightgreen;
+}
+
+.red {
+    background-color: lightcoral;
+}
+
+#formSubmitButtons>input {
+    border-radius: 3px;
+    height: 5vh;
+    max-height: 100px;
+    width: 20%;
+    max-width: 300px;
+    font-size: 120%;
+}
+
+#backdrop {
+    height: 100%;
+    width: 100%;
+    z-index: 3;
+    position: fixed;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+#loginPopup, #confirmDelete {
+    z-index: 4;
+    border: 3px solid black;
+    background-color: aliceblue;
+    height: 300px;
+    width: 300px;
+    position: fixed;
+    top: calc(50% - 150px);
+    right: calc(50% - 150px);
+    margin: auto;
+    text-align: center;
+}
+
+.hidden {
+    display: grid;
+    height: auto;
+    margin: auto;
+    text-align: center;
+}
+
+#exitPopup, #exitDelete {
+    padding: 2px 5px 2px 5px;
+    margin-right: 2px;
+    margin-top: 2px;
+    font-size: 20px;
+}
+
+#exitPopup:hover, #exitDelete:hover {
+    color: red;
+}
+
+#exitPopup:active, #exitDelete:active {
+    padding: 1px 4px 1px 4px;
+    border: #a3a3ff dotted 1px;
+    background-color: rgba(112, 128, 144, 0.288);
+}
+
+label.hidden {
+    margin-left: 0px;
+    margin-top: 5px;
+    font-size: 30px;
+}
+
+input.hidden {
+    height: 22px;
+    font-size: 20px;
+    text-align: left;
+}
+
+
+#loginSubmitButtons {
+    margin-top: 5px;
+    display: flex;
+}
+
+#loginSubmitButtons>input {
+    margin: auto;
+    font-size: 20px;
+    width: 100px;
+    height: 30px;
+    justify-content: space-between;
+}
+
+#loginSubmitButtons>input.red {
+    margin-left: 0px;
+}
+
+#loginSubmitButtons>input.green {
+    margin-right: 0px;
+}
+
+#provinceReg {
+    height: 28px;
+    min-width: 200px;
+    width: 40%;
+    font-size: 14px;
+}
+
+.formError {
+    float: right;
+    margin-left: auto;
+    margin-right: 5px;
+    color: red;
+    font-size: 12px;
+}
+
+#cartContainer {
+    display: grid;
+}
+
+.cartRight {
+    margin-right: 10px;
+    display: grid;
+    float: right;
+    height: 60px;
+    align-content: center;
+}
+.cartLeft{
+    margin-left:10px;
+    display: grid;
+    float: left;
+    height: 60px;
+    align-content: space-around;
+}
+.inCart {
+    margin-bottom: 5px;
+    height: 60px;
+    border-bottom: 3px dashed lightsteelblue;
+}
+
+.cartQuantity {
+    width: 35px;
+}
+
+.changeQuantityButton,
+.cartPanelRemove {
+    border: hidden;
+    text-align: left;
+    font-weight: bold;
+    text-decoration: underline;
+    background-color: aliceblue;
+    padding: 1px;
+    margin: 0px;
+}
+
+.changeQuantityButton:hover,
+.cartPanelRemove:hover {
+    border: 2px outset;
+    background-color: rgb(199, 211, 221);
+    border-radius: 3px;
+    margin-left: -2px;
+    margin-right: -2px;
+    margin-bottom:-2px;
+    margin-top: -2px;
+}
+
+.changeQuantityButton:active,
+.cartPanelRemove:active {
+    border: inset;
+    border-radius: 3px;
+    margin-left: -3px;
+    margin-right: -3px;
+    margin-bottom:-3px;
+    margin-top: -3px;
+}
+
+.cartPanelRemove:hover {
+    margin-top: -2px;
+}
+
+
+.cartPanelValue {
+    margin-right: 10px;
+}
+
+#billingFormContainer input, #billingFormContainer select{
+    margin:5px;
+    font-size: 15px;
+}
+#billingFormContainer label{
+    margin-left:5px;
+}
+#billingFormContainer .uplFormSingleContainer{
+    align-items: center;
+}
+
+
+#accInfoCategories{
+    margin: 0px 5px 5px 0px;
+    border-right: solid lightsteelblue 2px;
+    float: left;
+}
+
+.infoCat{
+    width:100px;
+    padding: 5px;
+    border-bottom:solid lightsteelblue 2px;
+}
+.infoCat:hover{
+    background-color: rgb(209, 233, 253);
+}
+.infoCat:active{
+    background-color: rgb(117, 175, 223);
+}
+
+#accInfoBlock{
+    display:flex;
+    margin:auto;
+}
+#accInfoDisplay{
+    float:left;
+    display:block;
+    min-height: 600px;
+    width:100%;
+}
+
+.tableAccInfo {
+    
+    margin-left:-5px;
+    overflow: auto;
+    height: 600px;
+}
+
+#dataTable{
+    table-layout: fixed;
+    width: 300%;
+    max-width: 1500px;
+}
+
+#deleteButtons{
+    display:flex; 
+    justify-content:space-around;
+    margin-top:10%;
+    margin-bottom:20%;
+}
+
+#deleteWarning{
+    font-size: 20px; 
+    color:red; 
+    font-weight: bold; 
+    width:85%;
+    margin:auto;
+}
+
+#confirmDeleteButton, #cancelDeleteButton{
+    height: 50px;
+    width: 120px;
+    font-size: 20px;
+}
+#confirmChangeButton, #cancelChangeButton{
+    height: 50px;
+    width: 86px;
+    font-size: 20px;
+}
+#changeForm{
+    display:grid;
+    justify-content: center;
+}
+
+.newInput{
+    text-align: center;
+    font-size:16px;
+}
+
+.changeError{
+    display:block;
+    font-size:20px;
+    color: red;
+    text-align: center;
+    margin-top: 5px;
+}

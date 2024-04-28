@@ -1,0 +1,20 @@
+<?php 
+include_once 'data/templates/header.php';?>
+    <div id="main">
+        <div id="middle">
+            <p style="text-align:justify; width:calc(100% - 36px); margin:0; padding:15px; margin-top: 100px; font-size: 20px;">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Diam in arcu cursus euismod quis viverra nibh cras pulvinar. Sapien pellentesque habitant morbi tristique senectus et netus et malesuada. Duis at consectetur lorem donec massa. Proin sed libero enim sed faucibus turpis in eu mi. Quis enim lobortis scelerisque fermentum dui faucibus in ornare. Id venenatis a condimentum vitae sapien pellentesque habitant. Mattis pellentesque id nibh tortor id. Et malesuada fames ac turpis egestas integer eget. Duis at tellus at urna condimentum mattis. Purus non enim praesent elementum facilisis leo vel fringilla est. Malesuada nunc vel risus commodo viverra maecenas accumsan lacus vel. Posuere sollicitudin aliquam ultrices sagittis. Magna eget est lorem ipsum.
+                <br>
+                Mauris nunc congue nisi vitae suscipit tellus mauris a. Egestas purus viverra accumsan in nisl nisi. Dignissim enim sit amet venenatis urna cursus eget nunc scelerisque. Quisque non tellus orci ac auctor. Quis viverra nibh cras pulvinar mattis nunc. Ac felis donec et odio pellentesque diam volutpat commodo sed. Posuere sollicitudin aliquam ultrices sagittis orci a scelerisque purus. Amet venenatis urna cursus eget. Sit amet purus gravida quis blandit turpis. Sagittis purus sit amet volutpat consequat mauris nunc congue. Nisl condimentum id venenatis a condimentum vitae sapien. Porta lorem mollis aliquam ut porttitor leo a diam. Massa tincidunt dui ut ornare lectus sit amet est placerat. Sit amet est placerat in egestas erat imperdiet sed. Nisi quis eleifend quam adipiscing. Pharetra convallis posuere morbi leo urna.
+                <br>
+                Eu augue ut lectus arcu bibendum at varius vel pharetra. Mauris commodo quis imperdiet massa tincidunt nunc pulvinar. Dictum varius duis at consectetur lorem donec. Quis commodo odio aenean sed adipiscing diam donec adipiscing. Facilisi nullam vehicula ipsum a arcu cursus vitae congue mauris. Amet tellus cras adipiscing enim eu turpis. Mauris nunc congue nisi vitae suscipit. Ut tortor pretium viverra suspendisse potenti nullam ac tortor vitae. Odio morbi quis commodo odio aenean sed adipiscing. Non sodales neque sodales ut etiam. Massa placerat duis ultricies lacus sed turpis tincidunt id.
+                <br>
+                Consectetur purus ut faucibus pulvinar elementum integer enim. Mi sit amet mauris commodo quis imperdiet massa tincidunt nunc. Commodo nulla facilisi nullam vehicula. Rhoncus aenean vel elit scelerisque mauris pellentesque pulvinar pellentesque. Duis ultricies lacus sed turpis. Turpis nunc eget lorem dolor. Pharetra diam sit amet nisl. At ultrices mi tempus imperdiet nulla malesuada pellentesque. Quis eleifend quam adipiscing vitae. Tempus imperdiet nulla malesuada pellentesque elit eget gravida cum. Ridiculus mus mauris vitae ultricies.
+                <br>
+                Imperdiet proin fermentum leo vel orci porta non. Nisl tincidunt eget nullam non nisi est sit amet. Volutpat ac tincidunt vitae semper quis lectus nulla at. Diam vel quam elementum pulvinar etiam non. Risus in hendrerit gravida rutrum quisque non tellus. Convallis convallis tellus id interdum. Nulla facilisi morbi tempus iaculis urna id. Tincidunt lobortis feugiat vivamus at augue eget. Nulla pharetra diam sit amet nisl suscipit adipiscing bibendum. Id eu nisl nunc mi ipsum faucibus. Sed odio morbi quis commodo. Amet nulla facilisi morbi tempus. Nisl rhoncus mattis rhoncus urna. In massa tempor nec feugiat nisl pretium fusce id velit. Nisi vitae suscipit tellus mauris a diam maecenas sed. Viverra orci sagittis eu volutpat odio facilisis. Quis blandit turpis cursus in hac. Mauris vitae ultricies leo integer malesuada nunc vel risus.</p>
+        </div>
+    </div>
+</body>
+<?php include_once 'data/templates/footer.html';?>
+
+</html>
